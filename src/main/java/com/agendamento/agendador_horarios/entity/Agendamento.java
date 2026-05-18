@@ -1,4 +1,4 @@
-package com.agendamento.agendador_horarios.infrastructure.entity;
+package com.agendamento.agendador_horarios.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -6,17 +6,17 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
 @Entity
 @Table(name = "Agendamento")
 
-public class Agendamentos {
+public class Agendamento {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
